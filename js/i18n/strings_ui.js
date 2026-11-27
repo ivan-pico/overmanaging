@@ -343,7 +343,7 @@ window.OW = window.OW || {};
       'page.back': '▲ Volver al juego',
       'page.what.h': '¿De qué va?',
       'page.what.p1': 'Si te gustan los juegos cooperativos de cocina caótica tipo <em>Overcooked</em>, OVERMANAGING cambia los fogones por la oficina de un <strong>Project Manager IT</strong>. Los «platos» son las <strong>citas de la agenda</strong>: revisar el presupuesto, la reunión de equipo, el seguimiento con el cliente, el comité de dirección... Cada reunión necesita un <strong>dossier</strong> con los documentos adecuados de tres carriles (<strong class="tb">presupuesto</strong>, <strong class="tp">planificación</strong> e <strong class="tr">informe de estado</strong>), y además hay <strong>llamadas</strong> y <strong>one-to-ones</strong> que se atienden en persona.',
-      'page.what.p2': 'Es el hermano pequeño de <a href="https://overworking.gohan.cat/">OVERWORKING</a> (el mismo caos, pero desde el otro lado del Gantt). Todo el arte y la música se generan por código con HTML5 Canvas y WebAudio. No hay descargas, registros ni anuncios: abres la página y juegas.',
+      'page.what.p2': 'Todo el arte y la música se generan por código con HTML5 Canvas y WebAudio. No hay descargas, registros ni anuncios: abres la página y juegas.',
       'page.how.h': 'Cómo se juega',
       'page.how.intro': 'Cada documento de color recorre esta cadena hasta acabar dentro de un dossier:',
       'page.how.s1': '<strong>Coge el encargo</strong> en la fuente de su color (archivador de finanzas, backlog o tablero del equipo) con <kbd>E</kbd>.',
@@ -431,7 +431,7 @@ window.OW = window.OW || {};
       'page.faq.a5': 'Sí: en modo 1 jugador controlas a dos PM y cambias entre ellos, y los umbrales de estrellas son más bajos.',
       'page.cred.h': 'Créditos',
       'page.cred.p1': 'Un juego de <a href="https://gohan.cat" rel="author">Ivan Picó</a> · <a href="https://gohan.cat">Gohan Project</a>.',
-      'page.cred.p2': 'Código fuente en <a href="https://github.com/ivan-pico/overmanaging">GitHub</a> bajo licencia <a href="https://www.gnu.org/licenses/gpl-3.0.html" rel="license">GPL-3.0</a>. Hermano de <a href="https://overworking.gohan.cat/">OVERWORKING</a>.',
+      'page.cred.p2': 'Código fuente en <a href="https://github.com/ivan-pico/overmanaging">GitHub</a> bajo licencia <a href="https://www.gnu.org/licenses/gpl-3.0.html" rel="license">GPL-3.0</a>.',
       'page.cred.p3': 'Ningún becario fue dañado durante el desarrollo. (Bueno, uno. Pero tenía café.)'
     }
   });

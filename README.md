@@ -8,8 +8,7 @@ redactarlo, imprimirlo, firmarlo, meterlo en la carpeta y llevarla a la sala de 
 mientras la impresora se atasca y arde, las notificaciones bloquean las mesas y el CEO aparece con
 "una ideíta rápida".
 
-Hermano de [OVERWORKING](https://overworking.gohan.cat/) (mismo motor, el caos visto desde el
-otro lado del Gantt). HTML5 Canvas + JavaScript vanilla. No necesita build, ni dependencias, ni servidor:
+HTML5 Canvas + JavaScript vanilla. No necesita build, ni dependencias, ni servidor:
 todos los gráficos y el audio se generan por código. **Bilingüe: catalán (por defecto) y castellano.**
 
 ## Cómo jugar
