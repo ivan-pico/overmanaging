@@ -1,0 +1,25 @@
+{
+  "id": "./",
+  "name": "OVERMANAGING — Co-op de Project Managers",
+  "short_name": "OVERMANAGING",
+  "description": "Joc cooperatiu per a 1–2 jugadors: ets Project Manager IT i has de complir l'agenda (reunions, pressupostos, trucades i one-to-ones) abans que tot s'encalli. En català i castellà.",
+  "lang": "ca",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "display_override": ["fullscreen", "standalone"],
+  "orientation": "landscape",
+  "background_color": "#07050f",
+  "theme_color": "#1a1033",
+  "categories": ["games", "entertainment"],
+  "icons": [
+    { "src": "icons/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "screenshots": [
+    { "src": "img/og-image.png", "sizes": "1200x630", "type": "image/png", "form_factor": "wide", "label": "OVERMANAGING: l'agenda d'un Project Manager IT" }
+  ]
+}

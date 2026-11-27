@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ca" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title data-i18n="page.title">OVERMANAGING — Joc cooperatiu de Project Managers gratis al navegador</title>
+  <meta name="description" data-i18n-attr="content:page.meta.desc" content="Joc co-op gratis per a 1–2 jugadors al navegador: ets Project Manager IT i has de complir l'agenda (reunions, pressupostos, trucades i one-to-ones) abans que tot s'encalli. Sense instal·lar, amb teclat o comandament. En català i castellà.">
+  <meta name="keywords" data-i18n-attr="content:page.meta.keywords" content="joc de project managers, joc cooperatiu, co-op local, joc de navegador, joc gratis, HTML5, joc d'oficina, agenda, reunions, gestió de projectes, joc en català">
+  <meta name="author" content="Ivan Picó — Gohan Project">
+  <meta name="creator" content="Ivan Picó">
+  <meta name="publisher" content="Gohan Project">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="theme-color" content="#1a1033">
+  <meta name="color-scheme" content="dark">
+  <meta name="application-name" content="OVERMANAGING">
+  <meta name="apple-mobile-web-app-title" content="OVERMANAGING">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="canonical" href="https://overmanaging.gohan.cat/">
+  <link rel="alternate" hreflang="ca" href="https://overmanaging.gohan.cat/">
+  <link rel="alternate" hreflang="es" href="https://overmanaging.gohan.cat/?lang=es">
+  <link rel="alternate" hreflang="x-default" href="https://overmanaging.gohan.cat/">
+  <link rel="author" href="https://gohan.cat">
+
+  <!-- Iconos y PWA -->
+  <link rel="icon" href="icons/favicon.ico" sizes="any">
+  <link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="icons/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="icons/favicon-16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" sizes="180x180">
+  <link rel="manifest" href="manifest.webmanifest">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="OVERMANAGING">
+  <meta property="og:locale" content="ca_ES">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:url" content="https://overmanaging.gohan.cat/">
+  <meta property="og:title" data-i18n-attr="content:page.og.title" content="OVERMANAGING — Joc cooperatiu de Project Managers">
+  <meta property="og:description" data-i18n-attr="content:page.og.desc" content="Reunions, pressupostos, trucades i one-to-ones: compleix l'agenda abans que la impressora cremi. Co-op local gratis per a 1–2 jugadors al navegador.">
+  <meta property="og:image" content="https://overmanaging.gohan.cat/img/og-image.png">
+  <meta property="og:image:secure_url" content="https://overmanaging.gohan.cat/img/og-image.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" data-i18n-attr="content:page.og.alt" content="Logotip d'OVERMANAGING amb una agenda plena de cites marcades i els tres colors del joc: pressupost, planificació i informe d'estat.">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" data-i18n-attr="content:page.og.title" content="OVERMANAGING — Joc cooperatiu de Project Managers">
+  <meta name="twitter:description" data-i18n-attr="content:page.og.desc" content="Reunions, pressupostos, trucades i one-to-ones: compleix l'agenda abans que la impressora cremi. Co-op local gratis per a 1–2 jugadors al navegador.">
+  <meta name="twitter:image" content="https://overmanaging.gohan.cat/img/og-image.png">
+  <meta name="twitter:image:alt" data-i18n-attr="content:page.og.alt" content="Logotip d'OVERMANAGING amb una agenda plena de cites marcades i els tres colors del joc: pressupost, planificació i informe d'estat.">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/devpanel.css">
+
+  <!-- Datos estructurados (schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://overmanaging.gohan.cat/#website",
+        "url": "https://overmanaging.gohan.cat/",
+        "name": "OVERMANAGING",
+        "description": "Joc cooperatiu de Project Managers IT gratis al navegador.",
+        "inLanguage": ["ca", "es"],
+        "author": { "@id": "https://gohan.cat/#ivan-pico" },
+        "publisher": { "@id": "https://gohan.cat/#organization" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://overmanaging.gohan.cat/#webpage",
+        "url": "https://overmanaging.gohan.cat/",
+        "name": "OVERMANAGING — Joc cooperatiu de Project Managers gratis al navegador",
+        "inLanguage": "ca",
+        "isPartOf": { "@id": "https://overmanaging.gohan.cat/#website" },
+        "about": { "@id": "https://overmanaging.gohan.cat/#game" },
+        "mainEntity": { "@id": "https://overmanaging.gohan.cat/#game" },
+        "primaryImageOfPage": { "@id": "https://overmanaging.gohan.cat/#og-image" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://gohan.cat/#ivan-pico",
+        "name": "Ivan Picó",
+        "url": "https://gohan.cat",
+        "sameAs": ["https://github.com/ivan-pico"],
+        "affiliation": { "@id": "https://gohan.cat/#organization" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://gohan.cat/#organization",
+        "name": "Gohan Project",
+        "url": "https://gohan.cat",
+        "founder": { "@id": "https://gohan.cat/#ivan-pico" }
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://overmanaging.gohan.cat/#og-image",
+        "url": "https://overmanaging.gohan.cat/img/og-image.png",
+        "contentUrl": "https://overmanaging.gohan.cat/img/og-image.png",
+        "width": 1200,
+        "height": 630,
+        "caption": "OVERMANAGING: l'agenda d'un Project Manager IT"
+      },
+      {
+        "@type": "VideoGame",
+        "@id": "https://overmanaging.gohan.cat/#game",
+        "name": "OVERMANAGING",
+        "alternateName": ["Overmanaging: co-op de Project Managers", "Overmanaging: co-op de Project Managers a contrarrellotge"],
+        "url": "https://overmanaging.gohan.cat/",
+        "description": "Joc cooperatiu frenètic per a 1 o 2 jugadors en què ets Project Manager IT: prepara dossiers de pressupost, planificació i informes d'estat, imprimeix-los, signa'ls i porta'ls a la sala de reunions abans que caduqui la cita de l'agenda. Atén trucades, fes one-to-ones amb l'equip, aixafa notificacions i esquiva les «ideetes ràpides» del CEO.",
+        "image": { "@id": "https://overmanaging.gohan.cat/#og-image" },
+        "screenshot": { "@id": "https://overmanaging.gohan.cat/#og-image" },
+        "inLanguage": ["ca", "es"],
+        "genre": ["Cooperatiu", "Party game", "Arcade", "Gestió del temps", "Simulació"],
+        "keywords": "joc de project managers, co-op local, joc de navegador, HTML5, agenda, reunions, gestió de projectes, català, castellà",
+        "playMode": ["https://schema.org/CoOp", "https://schema.org/SinglePlayer", "https://schema.org/MultiPlayer"],
+        "numberOfPlayers": { "@type": "QuantitativeValue", "minValue": 1, "maxValue": 2 },
+        "gamePlatform": ["Navegador web", "PC", "Mac", "Linux"],
+        "applicationCategory": "GameApplication",
+        "applicationSubCategory": "Joc cooperatiu local",
+        "operatingSystem": "Windows, macOS, Linux, ChromeOS (qualsevol navegador modern)",
+        "browserRequirements": "Requereix JavaScript i HTML5 Canvas. Teclat o comandament compatible amb la Gamepad API.",
+        "softwareVersion": "1.0",
+        "datePublished": "2026-11-27",
+        "isAccessibleForFree": true,
+        "isFamilyFriendly": true,
+        "accessMode": ["visual", "auditory"],
+        "accessibilityControl": ["fullKeyboardControl", "fullMouseControl"],
+        "license": "https://www.gnu.org/licenses/gpl-3.0.html",
+        "author": { "@id": "https://gohan.cat/#ivan-pico" },
+        "creator": { "@id": "https://gohan.cat/#ivan-pico" },
+        "publisher": { "@id": "https://gohan.cat/#organization" },
+        "gameLocation": [
+          { "@type": "Place", "name": "La Startup", "description": "Nivell 1: tutorial guiat amb pressupost, planificació i telèfon, sense perills." },
+          { "@type": "Place", "name": "El Coworking", "description": "Nivell 2: tres carrils, notificacions i one-to-ones." },
+          { "@type": "Place", "name": "La Consultora", "description": "Nivell 3: el CEO i les seves «ideetes ràpides»." },
+          { "@type": "Place", "name": "La Multinacional", "description": "Nivell 4: cintes de correu intern, impressores que s'encallen abans i llum tènue." },
+          { "@type": "Place", "name": "Tancament de trimestre", "description": "Nivell 5: tot alhora i apagades." }
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "EUR",
+          "availability": "https://schema.org/InStock",
+          "url": "https://overmanaging.gohan.cat/",
+          "category": "free"
+        },
+        "potentialAction": {
+          "@type": "PlayAction",
+          "target": "https://overmanaging.gohan.cat/"
+        },
+        "isBasedOn": {
+          "@type": "VideoGame",
+          "name": "OVERWORKING",
+          "url": "https://overworking.gohan.cat/"
+        },
+        "subjectOf": {
+          "@type": "SoftwareSourceCode",
+          "name": "Codi font d'OVERMANAGING",
+          "codeRepository": "https://github.com/ivan-pico/overmanaging",
+          "programmingLanguage": ["JavaScript", "HTML", "CSS"],
+          "runtimePlatform": "Navegador web",
+          "license": "https://www.gnu.org/licenses/gpl-3.0.html",
+          "author": { "@id": "https://gohan.cat/#ivan-pico" }
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Scripts clásicos en orden (defer conserva el orden y no bloquea el parseo; funciona con file://) -->
+  <!-- IDIOMAS: el motor primero, luego los textos de cada agente -->
+  <script defer src="js/i18n/i18n.js"></script>
+  <script defer src="js/i18n/strings_core.js"></script>
+  <script defer src="js/i18n/strings_art.js"></script>
+  <script defer src="js/i18n/strings_ui.js"></script>
+  <!-- AUDIO -->
+  <script defer src="js/audio.js"></script>
+  <!-- ART -->
+  <script defer src="js/art/art.js"></script>
+  <script defer src="js/art/characters.js"></script>
+  <script defer src="js/art/stations.js"></script>
+  <script defer src="js/art/items.js"></script>
+  <script defer src="js/art/fx.js"></script>
+  <script defer src="js/art/ui.js"></script>
+  <!-- CORE -->
+  <script defer src="js/core/fallbacks.js"></script>
+  <script defer src="js/core/tuning.js"></script>
+  <script defer src="js/core/config.js"></script>
+  <script defer src="js/core/input.js"></script>
+  <script defer src="js/core/levels.js"></script>
+  <script defer src="js/core/entities.js"></script>
+  <script defer src="js/core/game.js"></script>
+  <script defer src="js/core/hud.js"></script>
+  <script defer src="js/core/menus.js"></script>
+  <script defer src="js/core/devpanel.js"></script>
+  <script defer src="js/core/main.js"></script>
+  <!-- PÁGINA: idioma del HTML y pausa al hacer scroll fuera del juego -->
+  <script defer src="js/page.js"></script>
+</head>
+<body>
+  <main>
+    <section id="juego" aria-label="Joc" data-i18n-attr="aria-label:page.game.label">
+      <canvas id="game" width="1280" height="720" tabindex="0" role="application"
+              aria-label="OVERMANAGING: joc cooperatiu de Project Managers. Es juga amb teclat, ratolí o comandament."
+              data-i18n-attr="aria-label:page.canvas.label"
+              aria-describedby="como-jugar-resumen">
+        <p data-i18n="page.canvas.fallback">El teu navegador no pot mostrar el llenç del joc. Més avall tens la descripció, els controls i els nivells d'OVERMANAGING.</p>
+      </canvas>
+      <noscript>
+        <div class="noscript">
+          <p><strong>OVERMANAGING necessita JavaScript</strong> per funcionar. Activa'l i torna a carregar la pàgina per jugar.
+            <em lang="es">OVERMANAGING necesita JavaScript para funcionar.</em></p>
+          <p><a href="#acerca">Llegir sobre el joc</a></p>
+        </div>
+      </noscript>
+    </section>
+
+    <article id="acerca" class="about" aria-labelledby="titulo">
+      <header>
+        <nav class="langs" aria-label="Idioma" data-i18n-attr="aria-label:page.lang.nav">
+          <a href="?lang=ca#acerca" hreflang="ca" lang="ca" data-lang="ca">Català</a>
+          <a href="?lang=es#acerca" hreflang="es" lang="es" data-lang="es">Castellano</a>
+        </nav>
+        <h1 id="titulo" data-i18n-html="page.h1">OVERMANAGING: el joc cooperatiu de Project Managers al límit de l'<span class="hl">agenda</span></h1>
+        <p class="lead" id="como-jugar-resumen" data-i18n-html="page.lead">Un co-op frenètic per a 1 o 2 jugadors en què ets
+          <strong>Project Manager IT</strong>: prepares dossiers de pressupost, planificació i informes d'estat, els imprimeixes,
+          els signes i els portes a la sala de reunions abans que caduqui la cita de l'agenda. Tot mentre sonen els telèfons,
+          l'equip et demana un <em>one-to-one</em>, la safata s'omple de notificacions i el CEO arriba amb «una ideeta ràpida».</p>
+        <ul class="facts" aria-label="Dades ràpides" data-i18n-attr="aria-label:page.facts.label">
+          <li data-i18n="page.fact.1">Gratis</li>
+          <li data-i18n="page.fact.2">1–2 jugadors (co-op local)</li>
+          <li data-i18n="page.fact.3">Teclat, ratolí o comandament</li>
+          <li data-i18n="page.fact.4">Sense instal·lar: es juga al navegador</li>
+          <li data-i18n="page.fact.5">5 nivells · 4 dificultats</li>
+          <li data-i18n="page.fact.6">En català i castellà</li>
+        </ul>
+        <p><a class="play" href="#juego" data-i18n="page.back">▲ Tornar al joc</a></p>
+      </header>
+
+      <section aria-labelledby="h-que-es">
+        <h2 id="h-que-es" data-i18n="page.what.h">De què va?</h2>
+        <p data-i18n-html="page.what.p1">Si t'agraden els jocs cooperatius de cuina caòtica tipus <em>Overcooked</em>, OVERMANAGING canvia
+          els fogons per l'oficina d'un <strong>Project Manager IT</strong>. Els «plats» són les <strong>cites de l'agenda</strong>:
+          revisar el pressupost, la reunió d'equip, el seguiment amb el client, el comitè de direcció... Cada reunió necessita un
+          <strong>dossier</strong> amb els documents adequats de tres carrils (<strong class="tb">pressupost</strong>,
+          <strong class="tp">planificació</strong> i <strong class="tr">informe d'estat</strong>), i a més hi ha
+          <strong>trucades</strong> i <strong>one-to-ones</strong> que s'atenen en persona.</p>
+        <p data-i18n-html="page.what.p2">És el germà petit d'<a href="https://overworking.gohan.cat/">OVERWORKING</a> (el mateix caos,
+          però des de l'altra banda del Gantt). Tot l'art i la música es generen per codi amb HTML5 Canvas i WebAudio.
+          No hi ha descàrregues, registres ni anuncis: obres la pàgina i jugues.</p>
+      </section>
+
+      <section aria-labelledby="h-como">
+        <h2 id="h-como" data-i18n="page.how.h">Com es juga</h2>
+        <p class="howto-intro" data-i18n-html="page.how.intro">Cada document de color recorre aquesta cadena fins a acabar dins d'un dossier:</p>
+        <ol class="howto">
+          <li class="howto-step">
+            <span class="howto-n" aria-hidden="true">1</span>
+            <span class="howto-ico" aria-hidden="true"><b class="c-budget">€</b><b class="c-plan">▤</b><b class="c-report">◔</b></span>
+            <p data-i18n-html="page.how.s1"><strong>Agafa l'encàrrec</strong> a la font del seu color (arxivador de finances, backlog o tauler de l'equip) amb <kbd>E</kbd>.</p>
+          </li>
+          <li class="howto-step">
+            <span class="howto-n" aria-hidden="true">2</span>
+            <span class="howto-ico" aria-hidden="true"><b>✎</b></span>
+            <p data-i18n-html="page.how.s2"><strong>Redacta'l</strong> a l'escriptori amb portàtil: deixa'l i mantén <kbd>F</kbd> → <em>esborrany</em>.</p>
+          </li>
+          <li class="howto-step">
+            <span class="howto-n" aria-hidden="true">3</span>
+            <span class="howto-ico" aria-hidden="true"><b>⎙</b></span>
+            <p data-i18n-html="page.how.s3"><strong>Imprimeix-lo</strong>. La impressora va sola... però recull el paper a temps o s'encalla i <strong class="hot">crema</strong>.</p>
+          </li>
+          <li class="howto-step">
+            <span class="howto-n" aria-hidden="true">4</span>
+            <span class="howto-ico" aria-hidden="true"><b class="ok">✔</b></span>
+            <p data-i18n-html="page.how.s4"><strong>Fes-lo signar</strong> a la taula de signatures: mantén <kbd>F</kbd> → document <span class="ok">aprovat ✔</span>.</p>
+          </li>
+          <li class="howto-step">
+            <span class="howto-n" aria-hidden="true">5</span>
+            <span class="howto-ico" aria-hidden="true"><b>▣</b></span>
+            <p data-i18n-html="page.how.s5"><strong>Posa'l al dossier</strong>: agafa una carpeta de reunió de la pila i deixa-hi els documents aprovats.</p>
+          </li>
+          <li class="howto-step">
+            <span class="howto-n" aria-hidden="true">6</span>
+            <span class="howto-ico" aria-hidden="true"><b>☷</b></span>
+            <p data-i18n-html="page.how.s6"><strong>Porta el dossier a la sala de reunions</strong>: si encaixa amb una cita de l'agenda, reunió feta i aplaudiments!</p>
+          </li>
+        </ol>
+
+        <div class="prbox">
+          <h3 id="h-pr" data-i18n="page.agenda.h">Què poso al dossier?</h3>
+          <p data-i18n-html="page.agenda.p">Mira la targeta de la cita a l'agenda (a dalt a l'esquerra): <strong>cada xip de color és un document aprovat</strong>
+            que ha d'anar dins de la carpeta. Ni més ni menys, i com a molt un de cada color.</p>
+          <div class="table-wrap">
+            <table class="tasks">
+              <caption data-i18n="page.agenda.caption">Tipus de cita de l'agenda</caption>
+              <thead>
+                <tr><th scope="col" data-i18n="page.agenda.col1">Cita</th><th scope="col" data-i18n="page.agenda.col2">Què cal portar</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row" data-i18n="page.task.budget_meeting">Revisar pressupost</th><td><span class="chip b" data-i18n="page.lane.budget">Pressupost</span></td></tr>
+                <tr><th scope="row" data-i18n="page.task.daily">Reunió d'equip</th><td><span class="chip p" data-i18n="page.lane.plan">Planificació</span></td></tr>
+                <tr><th scope="row" data-i18n="page.task.status">Seguiment amb el client</th><td><span class="chip r" data-i18n="page.lane.report">Informe d'estat</span></td></tr>
+                <tr><th scope="row" data-i18n="page.task.business">Reunió amb negoci</th><td><span class="chip b" data-i18n="page.lane.budget">Pressupost</span> <span class="chip p" data-i18n="page.lane.plan">Planificació</span></td></tr>
+                <tr><th scope="row" data-i18n="page.task.presentation">Presentació de sprint</th><td><span class="chip p" data-i18n="page.lane.plan">Planificació</span> <span class="chip r" data-i18n="page.lane.report">Informe d'estat</span></td></tr>
+                <tr><th scope="row" data-i18n="page.task.steering">Comitè de seguiment</th><td><span class="chip b" data-i18n="page.lane.budget">Pressupost</span> <span class="chip r" data-i18n="page.lane.report">Informe d'estat</span></td></tr>
+                <tr><th scope="row" data-i18n="page.task.board">Comitè de direcció</th><td><span class="chip b" data-i18n="page.lane.budget">Pressupost</span> <span class="chip p" data-i18n="page.lane.plan">Planificació</span> <span class="chip r" data-i18n="page.lane.report">Informe d'estat</span></td></tr>
+                <tr><th scope="row" data-i18n="page.task.call">Trucada del client</th><td data-i18n-html="page.task.call.how">Res: amb les mans buides, mantén <kbd>F</kbd> 2 s al <strong>telèfon</strong> que sona.</td></tr>
+                <tr><th scope="row" data-i18n="page.task.one2one">One-to-one amb la Laia, en Marc...</th><td data-i18n-html="page.task.one2one.how">Res: amb les mans buides, mantén <kbd>F</kbd> 3 s a l'escriptori de la persona que aixeca la mà.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <ul class="howto-extra">
+          <li data-i18n-html="page.extra.fire"><strong>Foc:</strong> si un paper es queda a la impressora, s'encalla i crema. Apaga-la amb l'<strong>extintor</strong> (mantén <em>Acció</em>). El que s'ha cremat, a la destructora.</li>
+          <li data-i18n-html="page.extra.notif"><strong>Notificacions:</strong> correus i missatges «@here URGENT» revolotegen i bloquegen estacions: acosta-t'hi amb les mans buides i aixafa'ls.</li>
+          <li data-i18n-html="page.extra.minutes"><strong>Actes:</strong> després de cada reunió el dossier torna amb l'acta pendent; arxiva-la a l'estació d'actes per reutilitzar la carpeta.</li>
+          <li data-i18n-html="page.extra.ceo"><strong>El CEO:</strong> si t'atrapa amb «una ideeta ràpida» et deixa aturat uns segons. El <em>dash</em> l'esquiva.</li>
+          <li data-i18n-html="page.extra.coffee"><strong>Cafè:</strong> l'energia baixa amb el temps. Sense cafè vas a càmera lenta; recarrega a la cafetera.</li>
+        </ul>
+        <p data-i18n-html="page.how.outro">La jornada va de les 9:00 a les 18:00 (el rellotge de dalt). Cada cita caducada resta punts.
+          Aconsegueix d'1 a 3 estrelles per nivell per desbloquejar el següent; el progrés es desa al teu navegador.</p>
+      </section>
+
+      <section aria-labelledby="h-controles">
+        <h2 id="h-controles" data-i18n="page.ctl.h">Controls</h2>
+        <p data-i18n-html="page.ctl.p">Amb <strong>1 jugador</strong> portes dos PM i canvies entre ells amb <kbd>Tab</kbd> (o <kbd>Y</kbd> al comandament).
+          Amb <strong>2 jugadors</strong> compartiu teclat o feu servir comandaments.</p>
+        <div class="table-wrap">
+          <table>
+            <caption data-i18n="page.ctl.caption">Controls per jugador</caption>
+            <thead>
+              <tr><th scope="col" data-i18n="page.ctl.c0">Acció</th><th scope="col" data-i18n="page.ctl.c1">Jugador 1</th><th scope="col" data-i18n="page.ctl.c2">Jugador 2</th><th scope="col" data-i18n="page.ctl.c3">Comandament</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row" data-i18n="page.ctl.move">Moure's</th><td><kbd>W</kbd> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd></td><td data-i18n="page.ctl.arrows">Fletxes</td><td data-i18n="page.ctl.stick">Stick / creueta</td></tr>
+              <tr><th scope="row" data-i18n="page.ctl.grab">Agafar / deixar</th><td><kbd>E</kbd></td><td><kbd>.</kbd></td><td>A</td></tr>
+              <tr><th scope="row" data-i18n="page.ctl.action">Acció (mantenir)</th><td><kbd>F</kbd></td><td><kbd>,</kbd></td><td>X</td></tr>
+              <tr><th scope="row" data-i18n="page.ctl.dash">Dash (esquivar)</th><td data-i18n-html="page.ctl.lshift"><kbd>Shift</kbd> esq.</td><td><kbd>-</kbd> / <kbd>/</kbd></td><td>B</td></tr>
+              <tr><th scope="row" data-i18n="page.ctl.switch">Canviar de PM (1 jugador)</th><td><kbd>Tab</kbd></td><td><kbd>Tab</kbd></td><td>Y</td></tr>
+              <tr><th scope="row" data-i18n="page.ctl.pause">Pausa</th><td><kbd>Esc</kbd> / <kbd>P</kbd></td><td><kbd>Esc</kbd> / <kbd>P</kbd></td><td>Start</td></tr>
+              <tr><th scope="row" data-i18n="page.ctl.mute">Silenciar</th><td><kbd>M</kbd></td><td><kbd>M</kbd></td><td>—</td></tr>
+              <tr><th scope="row" data-i18n="page.ctl.lang">Canviar d'idioma (menús)</th><td><kbd>L</kbd></td><td><kbd>L</kbd></td><td data-i18n="page.ctl.ytitle">Y (pantalla de títol)</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p data-i18n-html="page.ctl.menus">Els menús es fan servir amb fletxes o WASD i <kbd>Enter</kbd>, amb el ratolí o amb el comandament.</p>
+      </section>
+
+      <section aria-labelledby="h-niveles">
+        <h2 id="h-niveles" data-i18n="page.lv.h">Nivells</h2>
+        <p data-i18n="page.lv.p">Els nivells es trien en un roadmap en forma de diagrama de Gantt: cada sprint depèn de l'anterior.</p>
+        <ol class="levels">
+          <li><h3 data-i18n="page.lv.1.name">La Startup</h3><p data-i18n="page.lv.1.desc">El primer dia: tutorial guiat amb pressupost, planificació i el telèfon, sense ensurts.</p></li>
+          <li><h3 data-i18n="page.lv.2.name">El Coworking</h3><p data-i18n="page.lv.2.desc">Tres carrils, les primeres notificacions i one-to-ones amb l'equip.</p></li>
+          <li><h3 data-i18n="page.lv.3.name">La Consultora</h3><p data-i18n="page.lv.3.desc">Compte amb el CEO i les seves «ideetes ràpides» (el dash l'esquiva).</p></li>
+          <li><h3 data-i18n="page.lv.4.name">La Multinacional</h3><p data-i18n="page.lv.4.desc">Cintes de correu intern, llum tènue i impressores que s'encallen abans.</p></li>
+          <li><h3 data-i18n="page.lv.5.name">Tancament de trimestre</h3><p data-i18n="page.lv.5.desc">Tot alhora. I se'n va la llum.</p></li>
+        </ol>
+      </section>
+
+      <section aria-labelledby="h-dificultad">
+        <h2 id="h-dificultad" data-i18n="page.diff.h">Dificultats</h2>
+        <dl class="diffs">
+          <div><dt class="d1" data-i18n="page.diff.1.name">Becari feliç</dt><dd data-i18n="page.diff.1.desc">Cites sense pressa, sense necessitat de cafè i el CEO de vacances.</dd></div>
+          <div><dt class="d2" data-i18n="page.diff.2.name">Junior optimista</dt><dd data-i18n="page.diff.2.desc">«Això ho tanquem en una reunió.» Molt de marge per aprendre.</dd></div>
+          <div><dt class="d3" data-i18n="page.diff.3.name">Sènior cafeïnat</dt><dd data-i18n="page.diff.3.desc">Terminis de veritat i dos cafès per hora, però amb ofici.</dd></div>
+          <div><dt class="d4" data-i18n="page.diff.4.name">PMO de ferro</dt><dd data-i18n="page.diff.4.desc">Agenda plena, comitès encadenats i la impressora en flames. Sort.</dd></div>
+        </dl>
+      </section>
+
+      <section aria-labelledby="h-faq">
+        <h2 id="h-faq" data-i18n="page.faq.h">Preguntes freqüents</h2>
+        <h3 data-i18n="page.faq.q1">És gratis?</h3>
+        <p data-i18n="page.faq.a1">Sí. OVERMANAGING és gratuït i de codi obert (llicència GPL-3.0).</p>
+        <h3 data-i18n="page.faq.q2">Cal instal·lar res?</h3>
+        <p data-i18n="page.faq.a2">No. Funciona en qualsevol navegador modern (Chrome, Firefox, Edge, Safari) a l'ordinador.</p>
+        <h3 data-i18n="page.faq.q3">En quins idiomes es pot jugar?</h3>
+        <p data-i18n-html="page.faq.a3">En <strong>català</strong> (per defecte) i en <strong>castellà</strong>. Canvia'l a <em>Opcions → Idioma</em>, amb el botó «CA | ES» de la pantalla de títol o amb la tecla <kbd>L</kbd>. L'elecció es recorda.</p>
+        <h3 data-i18n="page.faq.q4">Es pot jugar en línia?</h3>
+        <p data-i18n-html="page.faq.a4">El multijugador és <strong>local</strong>: dues persones al mateix ordinador, compartint teclat o amb comandaments.</p>
+        <h3 data-i18n="page.faq.q5">Puc jugar sol?</h3>
+        <p data-i18n="page.faq.a5">Sí: en mode 1 jugador controles dos PM i canvies entre ells, i els llindars d'estrelles són més baixos.</p>
+      </section>
+
+      <footer class="credits" aria-labelledby="h-creditos">
+        <h2 id="h-creditos" data-i18n="page.cred.h">Crèdits</h2>
+        <p data-i18n-html="page.cred.p1">Un joc d'<a href="https://gohan.cat" rel="author">Ivan Picó</a> · <a href="https://gohan.cat">Gohan Project</a>.</p>
+        <p data-i18n-html="page.cred.p2">Codi font a <a href="https://github.com/ivan-pico/overmanaging">GitHub</a> amb llicència
+          <a href="https://www.gnu.org/licenses/gpl-3.0.html" rel="license">GPL-3.0</a>. Germà d'<a href="https://overworking.gohan.cat/">OVERWORKING</a>.</p>
+        <p class="small" data-i18n="page.cred.p3">Cap becari no ha patit danys durant el desenvolupament. (Bé, un. Però tenia cafè.)</p>
+        <p><a class="play" href="#juego" data-i18n="page.back">▲ Tornar al joc</a></p>
+      </footer>
+    </article>
+  </main>
+</body>
+</html>

@@ -1,0 +1,6 @@
+# OVERMANAGING — https://overmanaging.gohan.cat/
+User-agent: *
+Allow: /
+Disallow: /tools/
+
+Sitemap: https://overmanaging.gohan.cat/sitemap.xml
