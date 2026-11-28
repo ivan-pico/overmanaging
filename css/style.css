@@ -156,6 +156,7 @@ tbody th { font-weight: normal; color: var(--muted); }
 .diffs .d4 { color: var(--danger); }
 .credits { margin-top: 24px; }
 .credits .small { color: var(--muted); font-size: 15px; }
+.credits .author-links { font-weight: bold; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }

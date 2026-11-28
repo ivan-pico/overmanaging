@@ -163,7 +163,7 @@
       U.text(ctx, tr('ui.title.subtitle'), 640, 380, { size: 22, color: '#fff', stroke: 'rgba(0,0,0,0.5)', strokeWidth: 5 });
       if (Math.sin(t * 4) > -0.3) U.text(ctx, tr('ui.title.press'), 640, 520, { size: 30, color: '#ffd23f', stroke: '#2b1b4a', strokeWidth: 7 });
       U.text(ctx, tr('ui.title.version'), 640, 682, { size: 15, color: 'rgba(255,255,255,0.75)' });
-      U.text(ctx, 'Gohan Project  ·  gohan.cat  ·  Ivan Picó', 640, 706, { size: 14, color: 'rgba(255,210,63,0.85)' });
+      U.text(ctx, 'Ivan Picó  ·  ivanpico.com  ·  gohan.cat', 640, 706, { size: 14, color: 'rgba(255,210,63,0.85)' });
       LangToggle.draw(ctx, t);
     }
   };

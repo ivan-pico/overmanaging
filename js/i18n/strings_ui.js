@@ -72,7 +72,7 @@ window.OW = window.OW || {};
       /* ---------- Crèdits ---------- */
       'ui.cred.title': 'CRÈDITS',
       'ui.cred.1': 'Equip del projecte',
-      'ui.cred.2': 'Un joc d\'Ivan Picó — Gohan Project',
+      'ui.cred.2': 'Un joc d\'Ivan Picó — ivanpico.com',
       'ui.cred.3': 'Agent CORE — jugabilitat, nivells i agenda',
       'ui.cred.4': 'Agent ART — gràfics procedurals i so',
       'ui.cred.5': 'Agent UI — menús, idiomes i pàgina web',
@@ -225,7 +225,7 @@ window.OW = window.OW || {};
 
       'ui.cred.title': 'CRÉDITOS',
       'ui.cred.1': 'Equipo del proyecto',
-      'ui.cred.2': 'Un juego de Ivan Picó — Gohan Project',
+      'ui.cred.2': 'Un juego de Ivan Picó — ivanpico.com',
       'ui.cred.3': 'Agente CORE — jugabilidad, niveles y agenda',
       'ui.cred.4': 'Agente ART — gráficos procedurales y sonido',
       'ui.cred.5': 'Agente UI — menús, idiomas y página web',
@@ -430,7 +430,8 @@ window.OW = window.OW || {};
       'page.faq.q5': '¿Puedo jugar solo?',
       'page.faq.a5': 'Sí: en modo 1 jugador controlas a dos PM y cambias entre ellos, y los umbrales de estrellas son más bajos.',
       'page.cred.h': 'Créditos',
-      'page.cred.p1': 'Un juego de <a href="https://gohan.cat" rel="author">Ivan Picó</a> · <a href="https://gohan.cat">Gohan Project</a>.',
+      'page.cred.p1': 'Hecho por <a href="https://ivanpico.com" target="_blank" rel="author me noopener">Ivan Picó</a>, Project Manager Técnico.',
+      'page.cred.links': '<a href="https://ivanpico.com" target="_blank" rel="me noopener">Ivan Picó</a> · <a href="https://www.linkedin.com/in/ivanpico" target="_blank" rel="me noopener">LinkedIn</a> · <a href="https://gohan.cat/">Más proyectos en gohan.cat</a>',
       'page.cred.p2': 'Código fuente en <a href="https://github.com/ivan-pico/overmanaging">GitHub</a> bajo licencia <a href="https://www.gnu.org/licenses/gpl-3.0.html" rel="license">GPL-3.0</a>.',
       'page.cred.p3': 'Ningún becario fue dañado durante el desarrollo. (Bueno, uno. Pero tenía café.)'
     }
